@@ -18,3 +18,5 @@ https://www.geeksforgeeks.org/data-structures/
 
 http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=Shape%20of%20You%20-%20Ed%20Sheeran
 
+
+ssr://c2doazEzLnNlcmVuYXp1bWEuY29tOjQzMDk3Om9yaWdpbjpyYzQtbWQ1Omh0dHBfc2ltcGxlOlZqSnlTbXhSLz9vYmZzcGFyYW09Wkc5M2JteHZZV1F1ZDJsdVpHOTNjM1Z3WkdGMFpTNWpiMjAmcHJvdG9wYXJhbT0mcmVtYXJrcz02YWFaNXJpdklPYXl1ZVd3bHVhWHV1Vy1vZW1Ia2NLMzVadTk1Yk92SU9lU3NPZVFnLVdGcU9XZm4tbWJ1LWlvaWlCQk1UTSZncm91cD01THFS
