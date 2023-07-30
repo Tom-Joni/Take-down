@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>代码表</title>
+  </head>
+  <style>
+    /* 公共样式 */
+    .container {
+      width: 1290px;
+
+      margin: 0 auto;
+    }
+
+    /* 其他两个的东西 的公共盒子 */
+    .box {
+      margin-right: -10px;
+    }
+
+    /* 🍅🍅🍅🍅 改动的地方-start*/
+    .item-2,
+    .item-3 {
+      width: 120px;
+      height: 120px;
+      font-size: 16px;
+      border-radius: 25%;
+      line-height: 120px;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 25px;
+      font-weight: bold;
+
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* 给1-100 码表item设置的 盒子样式 */
+
+    .item-1 {
+      width: 120px;
+      height: 120px;
+      font-size: 16px;
+      border-radius: 25%;
+      line-height: 120px;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 25px;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* 单独样式 */
+    /* 给1-100 码表单独设置的 盒子样式 */
+    .container1 > .box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 1300px;
+    }
+
+    /* 🍅🍅🍅🍅 改动的地方-end*/
+
+    .container2 {
+      margin-top: 30px;
+      height: 300px;
+    }
+
+    .container3 {
+      margin-top: 30px;
+      height: 100px;
+    }
+
+    .item-1 {
+      background-color: rgb(64, 196, 232);
+    }
+
+    .item-2 {
+      background-color: rgb(13, 157, 109);
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .item-3 {
+      background-color: red;
+    }
+    .box:hover {
+      cursor: pointer;
+    }
+    .item-1:hover {
+      background-color: rgb(13, 157, 109);
+    }
+
+    .item-2:hover {
+      background-color: rgb(64, 196, 232);
+      cursor: pointer;
+    }
+
+    .father {
+      position: relative;
+    }
+
+    .son {
+      position: relative;
+      line-height: normal;
+      font-size: 20px;
+      top: 16%;
+      left: 0;
+    }
+
+    body {
+      background-image: linear-gradient(to right, pink, skyblue);
+    }
+
+    .picture {
+      width: 520px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+
+    .picture img {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container container1">
+      <div class="box">
+        <div class="item-1 item item1" data-index="1">1 衣</div>
+        <div class="item-1 item item2" data-index="2">2 耳朵</div>
+        <div class="item-1 item item3" data-index="3">3 雪山</div>
+        <div class="item-1 item item4" data-index="4">4 狮</div>
+        <div class="item-1 item item5" data-index="5">5 湖</div>
+        <div class="item-1 item item6" data-index="6">6 牛</div>
+        <div class="item-1 item item7" data-index="7">7 棋</div>
+        <div class="item-1 item item8" data-index="8">8 耙</div>
+        <div class="item-1 item item9" data-index="9">9 篮球</div>
+        <div class="item-1 item itme10" data-index="10">10 十字架</div>
+        <div class="item-1 item itme11" data-index="11">11 雨衣</div>
+        <div class="item-1 item itme12" data-index="12">12 鱼儿</div>
+        <div class="item-1 item itme13" data-index="13">13 雨伞</div>
+        <div class="item-1 item itme14" data-index="14">14 鱼市</div>
+        <div class="item-1 item itme15" data-index="15">15 鹦鹉</div>
+        <div class="item-1 item itme16" data-index="16">16 衣钮</div>
+        <div class="item-1 item itme17" data-index="17">17 玉器</div>
+        <div class="item-1 item itme18" data-index="18">18 一巴</div>
+        <div class="item-1 item itme19" data-index="19">19 一脚</div>
+        <div class="item-1 item itme20" data-index="20">20 鳄梨🥑</div>
+        <div class="item-1 item itme21" data-index="21">21 鳄鱼</div>
+        <div class="item-1 item itme22" data-index="22">22 鹅鹅</div>
+        <div class="item-1 item itme23" data-index="23">23 和尚</div>
+        <div class="item-1 item itme24" data-index="24">24 饵丝</div>
+        <div class="item-1 item itme25" data-index="25">25 二胡</div>
+        <div class="item-1 item itme26" data-index="26">26 按钮🔴</div>
+        <div class="item-1 item itme27" data-index="27">27 耳机</div>
+        <div class="item-1 item itme28" data-index="28">28 恶霸</div>
+        <div class="item-1 item itme29" data-index="29">29 贰角</div>
+        <div class="item-1 item itme30" data-index="30">30 山林</div>
+        <div class="item-1 item itme31" data-index="31">31 鲨鱼</div>
+        <div class="item-1 item itme32" data-index="32">32 沙鸥</div>
+        <div class="item-1 item itme33" data-index="33">33 扇子</div>
+        <div class="item-1 item itme34" data-index="34">34 沙石</div>
+        <div class="item-1 item itme35" data-index="35">35 珊瑚</div>
+        <div class="item-1 item itme36" data-index="36">36 山路</div>
+        <div class="item-1 item itme37" data-index="37">37 山鸡</div>
+        <div class="item-1 item itme38" data-index="38">38 妇女</div>
+        <div class="item-1 item itme39" data-index="39">39 三角形</div>
+        <div class="item-1 item itme40" data-index="40">40 司令</div>
+        <div class="item-1 item itme41" data-index="41">41 石椅</div>
+        <div class="item-1 item itme42" data-index="42">42 蛇🐍</div>
+        <div class="item-1 item itme43" data-index="43">43 丝袜</div>
+        <div class="item-1 item itme44" data-index="44">44 石狮</div>
+        <div class="item-1 item itme45" data-index="45">45 石斧</div>
+        <div class="item-1 item itme46" data-index="46">46 石榴</div>
+        <div class="item-1 item itme47" data-index="47">47 司机</div>
+        <div class="item-1 item itme48" data-index="48">48 丝帕</div>
+        <div class="item-1 item itme49" data-index="49">49 石臼</div>
+        <div class="item-1 item itme50" data-index="50">50 武林</div>
+        <div class="item-1 item itme51" data-index="51">51 舞衣</div>
+        <div class="item-1 item itme52" data-index="52">52 猴儿</div>
+        <div class="item-1 item itme53" data-index="53">53 火山</div>
+        <div class="item-1 item itme54" data-index="54">54 武士</div>
+        <div class="item-1 item itme55" data-index="55">55 五虎</div>
+        <div class="item-1 item itme56" data-index="56">56 蜗牛</div>
+        <div class="item-1 item itme57" data-index="57">57 乌鸡</div>
+        <div class="item-1 item itme58" data-index="58">58 尾巴</div>
+        <div class="item-1 item itme59" data-index="59">59 五角星</div>
+        <div class="item-1 item itme60" data-index="60">60 榴莲</div>
+        <div class="item-1 item itme61" data-index="61">61 纽约</div>
+        <div class="item-1 item itme62" data-index="62">62 牛耳饼</div>
+        <div class="item-1 item itme63" data-index="63">63 硫酸</div>
+        <div class="item-1 item itme64" data-index="64">64 律师</div>
+        <div class="item-1 item itme65" data-index="65">65 绿屋</div>
+        <div class="item-1 item itme66" data-index="66">66 溜溜球</div>
+        <div class="item-1 item itme67" data-index="67">67 流星</div>
+        <div class="item-1 item itme68" data-index="68">68 牛排</div>
+        <div class="item-1 item itme69" data-index="69">69 牛角面包</div>
+        <div class="item-1 item itme70" data-index="70">70 麒麟</div>
+        <div class="item-1 item itme71" data-index="71">71 鲸鱼</div>
+        <div class="item-1 item itme72" data-index="72">72 企鹅</div>
+        <div class="item-1 item itme73" data-index="73">73 G3</div>
+        <div class="item-1 item itme74" data-index="74">74 骑士</div>
+        <div class="item-1 item itme75" data-index="75">75 骑虎</div>
+        <div class="item-1 item itme76" data-index="76">76 气炉</div>
+        <div class="item-1 item itme77" data-index="77">77 机器</div>
+        <div class="item-1 item itme78" data-index="78">78 旗袍</div>
+        <div class="item-1 item itme79" data-index="79">79 气球</div>
+        <div class="item-1 item itme80" data-index="80">80 巴黎铁塔</div>
+        <div class="item-1 item itme81" data-index="81">81 白蚁</div>
+        <div class="item-1 item itme82" data-index="82">82 宝盒</div>
+        <div class="item-1 item itme83" data-index="83">83 巴沙鱼</div>
+        <div class="item-1 item itme84" data-index="84">84 巴士</div>
+        <div class="item-1 item itme85" data-index="85">85 宝物</div>
+        <div class="item-1 item itme86" data-index="86">86 白鹿</div>
+        <div class="item-1 item itme87" data-index="87">87 白旗</div>
+        <div class="item-1 item itme88" data-index="88">88 爸爸</div>
+        <div class="item-1 item itme89" data-index="89">89 排球🏐</div>
+        <div class="item-1 item itme90" data-index="90">90 旧铃</div>
+        <div class="item-1 item itme91" data-index="91">91 球衣</div>
+        <div class="item-1 item itme92" data-index="92">92 乒乓球🏓</div>
+        <div class="item-1 item itme93" data-index="93">93 脚刹</div>
+        <div class="item-1 item itme94" data-index="94">94 教师</div>
+        <div class="item-1 item itme95" data-index="95">95 酒壶</div>
+        <div class="item-1 item itme96" data-index="96">96 旧楼</div>
+        <div class="item-1 item itme97" data-index="97">97 酒起</div>
+        <div class="item-1 item itme98" data-index="98">98 酒吧</div>
+        <div class="item-1 item itme99" data-index="99">99 香蕉🍌</div>
+        <div class="item-1 item itme00" data-index="00">00 眼镜</div>
+      </div>
+    </div>
+
+    <div class="container container3">
+      <div class="box">
+        <div class="item-3 item">00 眼镜</div>
+        <div class="item-3 item">01 铅笔</div>
+        <div class="item-3 item">02 绿树</div>
+        <div class="item-3 item">03 烤串</div>
+        <div class="item-3 item">04 蓝旗</div>
+        <div class="item-3 item">05 土豆</div>
+        <div class="item-3 item">06 哨子</div>
+        <div class="item-3 item">07 铁锤</div>
+        <div class="item-3 item">08 葫芦</div>
+        <div class="item-3 item">09 火炬</div>
+      </div>
+    </div>
+
+    <div class="container container2">
+      <div class="box">
+        <div class="item-2 item father">
+          <div class="son">a</div>
+          <div class="son">apple</div>
+          <div class="son">苹果</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">b</div>
+          <div class="son">bee</div>
+          <div class="son">蜜蜂🐝</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">c</div>
+          <div class="son">cat</div>
+          <div class="son">猫</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">d</div>
+          <div class="son">dog</div>
+          <div class="son">狗</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">e</div>
+          <div class="son">egg</div>
+          <div class="son">蛋/鸡蛋</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">f</div>
+          <div class="son">frog</div>
+          <div class="son">青蛙</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">g</div>
+          <div class="son">girl</div>
+          <div class="son">女孩</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">h</div>
+          <div class="son">hat</div>
+          <div class="son">帽子</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">i</div>
+          <div class="son">ice</div>
+          <div class="son">冰</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">j</div>
+          <div class="son">Jeep</div>
+          <div class="son">吉普车</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">k</div>
+          <div class="son">key</div>
+          <div class="son">钥匙</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">l</div>
+          <div class="son">lock</div>
+          <div class="son">锁</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">m</div>
+          <div class="son">monkey</div>
+          <div class="son">猴子</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">n</div>
+          <div class="son">noodle</div>
+          <div class="son">面条</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">o</div>
+          <div class="son">orange</div>
+          <div class="son">橘子</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">p</div>
+          <div class="son">pan</div>
+          <div class="son">平底锅</div>
+        </div>
+
+        <!-- ------------- -->
+        <div class="item-2 item father">
+          <div class="son">q</div>
+          <div class="son">quoits</div>
+          <div class="son">金属环</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">r</div>
+          <div class="son">rat</div>
+          <div class="son">老鼠</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">s</div>
+          <div class="son">sun</div>
+          <div class="son">太阳</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">t</div>
+          <div class="son">tea</div>
+          <div class="son">茶</div>
+        </div>
+
+        <!-- ------------- -->
+
+        <div class="item-2 item father">
+          <div class="son">u</div>
+          <div class="son">UFO</div>
+          <div class="son">外星飞碟</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">v</div>
+          <div class="son">vinegar</div>
+          <div class="son">醋</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">w</div>
+          <div class="son">Watermelon</div>
+          <div class="son">西瓜</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">x</div>
+          <div class="son">X射线(X光)</div>
+          <div class="son">x-ray</div>
+        </div>
+
+        <div class="item-2 item father">
+          <div class="son">y</div>
+          <div class="son">yolk</div>
+          <div class="son">蛋黄</div>
+        </div>
+        <div class="item-2 item father">
+          <div class="son">z</div>
+          <div class="son">zebra</div>
+          <div class="son">斑马</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./sccript/join.js"></script>
